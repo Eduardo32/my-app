@@ -79,6 +79,7 @@ function App() {
   }
 
   function clearForm() {
+    setId('')
     setFirstName('');
     setLastName('');
     setUserName('');
