@@ -89,34 +89,31 @@ function App() {
   return (
     <div id="app">
       <form onSubmit={handleAddUser}>
-        <label htmlFor="first_name">Nome</label>
+        <label htmlFor="first_name">Nome:</label><br/>
         <input 
           name="first_name"
           id="first_name"
           value={firstName}
           onChange={e => setFirstName(e.target.value)}
           required
-        />
-        <br/>
-        <label htmlFor="last_name">Sobrenome</label>
+        /><br/>
+        <label htmlFor="last_name">Sobrenome:</label><br/>
         <input 
           name="last_name"
           id="last_name"
           value={lastName}
           onChange={e => setLastName(e.target.value)}
           required
-        />
-        <br/>
-        <label htmlFor="username">Nome de usuario</label>
+        /><br/>
+        <label htmlFor="username">Nome de usuario:</label><br/>
         <input 
           name="username"
           id="username"
           value={userName}
           onChange={e => setUserName(e.target.value)}
           required
-        />
-        <br/>
-        <label htmlFor="email">Email</label>
+        /><br/>
+        <label htmlFor="email">Email:</label><br/>
         <input 
           name="email"
           id="email"
@@ -124,7 +121,7 @@ function App() {
           value={email}
           onChange={e => setEmail(e.target.value)}
           required
-        />
+        /><br/><br/>
         <button type="submit">Salvar</button>
         <button onClick={clearForm}>Limpar</button>
       </form>
